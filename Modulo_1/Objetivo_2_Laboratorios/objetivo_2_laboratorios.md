@@ -1,5 +1,18 @@
 # Informe de Laboratorios
 
+# 1. Turnero
+
+1. Empezamos accediendo al laboratorio Turnero
+2. Analizamos las peticiones que se generan al comenzar **(XHR)**
+3. Podemos identificar una url que tiene **api/user_id/appointments**
+4. Verificamos que al cambiar el numero de nuestro usuario a otro numero random nos muestra otros datos por lo que damos por sentado que nos permite entrar a otros usuarios al cambiar ese numero
+5. Utilizamos Burp para editar esa URL y que envia constantes peticiones hasta conseguir el usuario "xdalvik"
+6. Una vez que lo encontramos utilizamos el metodo DELETE /api/appointments/id el cual tambien te permite borrar cosas de otros usuarios ya que no tiene necesidad de ninguna verficacion previa
+7. Colocamos los ids de los turnos de xdalvik, borrando uno por uno
+8. Recargamos la pagina, y conseguimos el codigo para finalizar el laboratorio
+
+# 2. Ventas 
+
 # 4. Gran Rifa 2019
 
 # Procedimiento
